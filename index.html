@@ -470,10 +470,12 @@
               class="form-input-name"
               name="user-name"
               id="username"
+              placeholder=" "
+              autocomplete="off"
             />
             <label class="username-label" for="username">Имя</label>
 
-            <svg class="icon">
+            <svg class="name-icon">
               <use href="./images/sprite.svg#icon-person-black-18dp-1-1"></use>
             </svg>
           </div>
@@ -483,10 +485,12 @@
               class="form-input-tel"
               name="user-tel"
               id="telnumber"
+              placeholder=" "
+              autocomplete="off"
             />
             <label class="tel-label" for="telnumber">Телефон</label>
 
-            <svg class="icon">
+            <svg class="tel-icon">
               <use href="./images/sprite.svg#icon-phone-black-18dp-1-1"></use>
             </svg>
           </div>
@@ -496,27 +500,44 @@
               class="form-input-mail"
               name="user-mail"
               id="usermail"
+              placeholder=" "
+              autocomplete="off"
             />
             <label class="mail-label" for="usermail">Почта</label>
 
-            <svg class="icon">
+            <svg class="mail-icon">
               <use href="./images/sprite.svg#icon-email-black-18dp-1-1"></use>
             </svg>
           </div>
           <div class="form-field-feedback">
-            <input
-              type="text"
+            <textarea
               class="form-input-feedback"
               name="user-feedback"
               id="feedback"
-            />
+              placeholder=" "
+              autocomplete="off"
+            ></textarea>
             <label class="feedback-label" for="feedback">Комментарий</label>
           </div>
           <div class="checkbox-policy-form-field">
-            <input type="checkbox" name="user-policy-agreement" id="policy" />
-            <label class="policy-label" for="policy"
-              ><span class="policy-text"></span> Соглашаюсь с рассылкой и
-              принимаю
+            <input
+              type="checkbox"
+              name="user-policy-agreement"
+              id="policy"
+              class="policy-stock-checkbox"
+            />
+            <span class="custom-checkbox">
+              <svg
+                class="checked-icon"
+                width="12px"
+                height="15px"
+                fill="#ffffff"
+              >
+                <use href="./images/sprite.svg#white-check-mark"></use>
+              </svg>
+            </span>
+            <label class="policy-label" for="policy">
+              <span class="policy-text">Соглашаюсь с рассылкой и принимаю</span>
               <a class="policy-link" href="#">Условия договора</a></label
             >
           </div>
